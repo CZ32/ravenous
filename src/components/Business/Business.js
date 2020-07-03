@@ -18,7 +18,7 @@ class Business extends React.Component {
         {`${this.props.business.state} ${this.props.business.zipCode}`}
       </p>
      </div>
-     <div clasNames="Business-reviews">
+     <div className="Business-reviews">
       <h3>{this.props.business.category}</h3>
       <h3 className="rating">{this.props.business.rating}</h3>
       <p>{this.props.business.reviewCount}</p>
