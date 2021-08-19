@@ -1,5 +1,4 @@
-const apiKey =
- 'SaO2ymF3ozzqPDULXm_9zPXh6DVTrdNy9tKcH-rXTEkLAxtaqUGeVQNEUOM3Udy6_L0qqRYdo2FfnYU_A9Ni3d7fluQwIvpnf5HmeTomnlFPFlt4GlM8fvpYU8YBX3Yx';
+const apiKey = process.env.REACT_APP_RAVENOUS_YELP_API_KEY;
 
 const Yelp = {
  search: function (term, location, sortBy) {
@@ -28,6 +27,8 @@ const Yelp = {
       rating: business.rating,
       reviewCount: business.review_count,
      }));
+    }else{
+      return []
     }
    });
  },
