@@ -1,79 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ravenous - A react web app where you can search for your favourite restaurants near you.
 
-## Available Scripts
+This project was designed by Codecademy.
 
-In the project directory, you can run:
+## Techstack 
+React, JavaScript, Yelp API, Surge
 
-### `npm start`
+## What does this app do? 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ravenous is a simple front-end app where you can search for restaurants based on name, ingredient, cuisine type, and location.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[LIVE VERSION up and running. Please visit cengiz-ravenous.surge.sh]
 
-### `npm test`
+*** NOTE ***
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+From the same browser, use [https://cors-anywhere.herokuapp.com/] to temporarily allow access to the cors-anywhere demo and enable response from YELP API. 
 
-### `npm run build`
+## Learning Objectives
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Learn how to pass props to child components.  
+* Utilising handlers to change the state of components. 
+* Controlled components. 
+* Learn how to call 3rd party API's (Yelp) and handle their responses. 
+* Implicit Grant Flow for Client Authentication. 
+* Creating and using API Keys and storing as environment variables. 
+* Deploying front-end application using Surge.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Dependancies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* "CORS Anywhere is a NodeJS proxy which adds CORS headers to the proxied request" this is used to access the Yelp API, that does not support CORS. Please view [documentation](https://github.com/Rob--W/cors-anywhere) for more information.
 
-### `npm run eject`
+## How to install and run.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Clone the repository.
+* Using node, run 'npm install' to install depenancies.
+* Run 'PORT=2000 npm start' to run Ravenous react app in the browser. The port number has to be changed from the default used by React as the cors-anywhere API limits the amount a client can call the API to prevent abuse. 
+* Use [https://cors-anywhere.herokuapp.com/] to temporarily allow access to the cors-anywhere demo and enable response from YELP API.  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Using the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Insert a restaurant/ cuisine name.
+2. Insert a location.
+3. Optional:  Choose result order criteria.
+4. Click 'Let's go button'.
+5. Receive results.
 
 
-### Additional Add-ons
-Below is a list of some potential features to add to Ravenous:
 
-Make addresses clickable and have them open the address in Google Maps in a new tab
-Make images clickable and have them open the business’ website in a new tab
-Clicking on a different sorting option automatically requeries the Yelp API, rather than having to manually click “Let’s Go” again
-Implement your own type of sort (for example, by entering a distance or radius from a central location)
-Allow you to search by pressing “Enter” (or “Return”) on your keyboard, as opposed to manually clicking
-Add autocompletion of addresses to the “Location” input
+
+
+  
